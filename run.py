@@ -26,7 +26,9 @@ def display_word(word, guessed_letters):
 def hangman():
     word_to_guess = choose_word().lower() 
     guessed_letters = []  
-    attempts = 10  
+    attempts = 10 
+
+# username function - error if requirements not met. Print to console when met
 
 def welcome():
     print("Welcome to Hangman!")
@@ -40,4 +42,9 @@ def welcome():
 
     print(f"Hello, {username}! Welcome to Hangman.")
 
+def display_menu():
+    print("Please select an option below:")
+    print("1. Start Game")
+    print("2. Exit Game")
+    
 
