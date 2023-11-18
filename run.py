@@ -33,7 +33,7 @@ def hangman():
 def welcome():
     print("Welcome to Hangman!")
     while True:
-        username = input("Enter your username (1-8 characters, no numbers or special characters):")
+        username = input("Enter your username (1-8 characters, no numbers or special characters):\n")
 
         if 1 <= len(username) <= 8 and username.isalpha():
             break
@@ -46,5 +46,22 @@ def display_menu():
     print("Please select an option below:")
     print("1. Start Game")
     print("2. Exit Game")
-    
 
+def get_user_choice():
+    choice = input("Enter your choice (1 or 2):\n")
+    return choice
+
+def start_game():
+    objective = "The words used in this game are popular musical instruments. You have 10 lives. Good luck!"
+    print(objective)
+
+    word_to_guess = choose_word().lower()
+    guessed_letters = []
+    lives = 10
+
+    while lives > 0:
+        display_word_with_lives(word_to_guess, guessed_letters, lives)
+        guess = get_user_guess()
+
+        if guess in guessed_letters:
+            print("Oops! You've already guessed that letter. Please try again.")
