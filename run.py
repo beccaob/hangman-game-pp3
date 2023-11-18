@@ -1,3 +1,43 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# randomly chose a word from list 
+import random
+
+# words to be used in game
+def choose_word():
+    words = {"guitar","piano","flute","violin","drums","bass","triangle"}
+    return random.choice(words)
+
+# iterate through each letter in the word
+# if guessed correctly - add letter to display string
+# if guessed incorrectly, add an underscore to display string
+
+def display_word(word, guessed_letters):
+    display = ""
+    for letter in word:
+        if letter in guessed_letters:
+            display += letter
+        else:
+            display += "_"
+    return display
+
+#select word at random - convert to lowercase
+#keeps track of letters guessed 
+#amount of guesses user has
+
+def hangman():
+    word_to_guess = choose_word().lower() 
+    guessed_letters = []  
+    attempts = 10  
+
+def welcome():
+    print("Welcome to Hangman!")
+    while True:
+        username = input("Enter your username (1-8 characters, no numbers or special characters):")
+
+        if 1 <= len(username) <= 8 and username.isalpha():
+            break
+        else:
+            print("Username error, please try again.")
+
+    print(f"Hello, {username}! Welcome to Hangman.")
+
+
