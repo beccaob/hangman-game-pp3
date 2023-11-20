@@ -53,6 +53,21 @@ def get_user_choice():
     choice = input("Enter your choice (1 or 2):\n")
     return choice
 
+if __name__ == "__main__": #checks if being run directly or imported as a module
+    welcome()
+
+    while True:
+        display_menu()
+        user_choice = get_user_choice()
+
+        if user_choice == '1':
+            start_game()
+        elif user_choice == '2':
+            print(f"Goodbye, {username}!")
+            break
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+
 def start_game():
     objective = "The words used in this game are popular musical instruments. You have 10 lives. Good luck!"
     print(objective)
@@ -84,5 +99,8 @@ def start_game():
     
 def display_word_with_lives(word,guessed_letters,lives):
     print(f"Word: {display_word(word, guessed_letters)} | Lives: {lives}")
+
+def get_user_guess():
+    return input("Guess a letter: ").lower()
 
         
