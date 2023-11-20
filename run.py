@@ -2,7 +2,7 @@ import random
 
 # words to be used in the game
 def choose_word():
-    words = ["guitar", "piano", "flute", "violin", "drums", "bass", "triangle"]
+    words = ["guitar", "piano", "flute", "violin", "drums", "bass", "triangle","clarinet","cello"]
     return random.choice(words)
 
 # iterate through each letter in the word
@@ -103,4 +103,12 @@ def end_game(username):
     print("2. Quit To Home")
     choice = get_user_choice()
 
-        
+    # action to be taken after user choice
+    if choice == '1':
+        start_game(username)
+    elif choice == '2':
+        print(f"Sure thing, {username}! Returning home..")
+        return
+    else:
+        print("Invalid choice. Returning Home...")
+        return   
