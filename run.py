@@ -39,5 +39,16 @@ def welcome():
     print(f"Hello, {username}! Welcome to Hangman.")
     return username
 
+# game options
+def display_menu():
+    print("Please select an option below:")
+    print("1. Start Game")
+    print("2. Exit Game")
+
+# gets user choice of 1 or 2
+def get_user_choice():
+    choice = input("Enter your choice (1 or 2):\n")
+    return choice
+
 
         
