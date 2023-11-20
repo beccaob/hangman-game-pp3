@@ -91,4 +91,8 @@ def get_user_guess():
         else:
             print("Invalid input. Please enter a single letter.")
 
+# users progress of lives and guesses 
+def display_word_with_lives(word, guessed_letters, lives):
+    print(f"Word: {display_word(word, guessed_letters)} | Lives: {lives}")
+
         
