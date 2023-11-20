@@ -112,3 +112,20 @@ def end_game(username):
     else:
         print("Invalid choice. Returning Home...")
         return   
+
+# checks if script is being run as main program and not imported 
+if __name__ == "__main__":
+    # ensures that program keeps running and responding user's choices until they decide to quit the game
+    username = welcome()
+
+    while True:
+        display_menu()
+        user_choice = get_user_choice()
+
+        if user_choice == '1':
+            start_game(username)
+        elif user_choice == '2':
+            print(f"Goodbye, {username}!")
+            break
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
