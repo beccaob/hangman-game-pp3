@@ -50,5 +50,14 @@ def get_user_choice():
     choice = input("Enter your choice (1 or 2):\n")
     return choice
 
+def start_game(username):
+    objective = "The words used in this game are popular musical instruments. You have 10 lives. Good luck!"
+    print(objective)
+    
+    # choose random word and set guessed letters to an empty set
+    word_to_guess = choose_word().lower()
+    guessed_letters = set()
+    lives = 10
+
 
         
