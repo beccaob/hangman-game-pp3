@@ -42,11 +42,13 @@ def welcome():
 
     print(f"Hello, {username}! Welcome to Hangman.")
 
+#game options
 def display_menu():
     print("Please select an option below:")
     print("1. Start Game")
     print("2. Exit Game")
 
+#gets user choise of 1 or 2
 def get_user_choice():
     choice = input("Enter your choice (1 or 2):\n")
     return choice
@@ -65,3 +67,14 @@ def start_game():
 
         if guess in guessed_letters:
             print("Oops! You've already guessed that letter. Please try again.")
+
+        elif guess in word_to_guess:
+            guessed_letters.append(guess)
+            if "_" not in display_word(word_to_guess, guessed_letters):
+                print(f"Congratulations, {username}! You guessed the word: {word_to_guess}")
+                break
+        else:
+            lives -= 1
+            print(f"Wrong guess! Lives left: {lives}")
+
+        
