@@ -103,4 +103,20 @@ def display_word_with_lives(word,guessed_letters,lives):
 def get_user_guess():
     return input("Guess a letter: ").lower()
 
+def end_game():
+    print("Game Over")
+    print("Select an option:")
+    print("1. Restart")
+    print("2. Quit")
+    choice = get_user_choice()
+
+    if choice == '1':
+        start_game()
+    elif choice == '2':
+        print(f"Goodbye, {username}!")
+        exit()
+    else:
+        print("Invalid choice. Exiting...")
+        exit()
+
         
