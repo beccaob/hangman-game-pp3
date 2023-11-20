@@ -82,5 +82,13 @@ def start_game(username):
 
     end_game(username)
 
+# get single letter input before game begins, error if requirements not met
+def get_user_guess():
+    while True:
+        guess = input("Guess a letter: ").lower()
+        if guess.isalpha() and len(guess) == 1:
+            return guess
+        else:
+            print("Invalid input. Please enter a single letter.")
 
         
