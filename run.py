@@ -58,6 +58,29 @@ def start_game(username):
     word_to_guess = choose_word().lower()
     guessed_letters = set()
     lives = 10
+    # loop runs if word is not guessed - breaks if lives gone or word guessed
+    while lives > 0:
+        display_word_with_lives(word_to_guess, guessed_letters, lives)
+        guess = get_user_guess()
+
+        if guess in guessed_letters:
+            print("Oops! You've already guessed that letter. Please try again.")
+            continue  # Skip the rest of the loop and get a new guess
+
+        guessed_letters.add(guess)
+
+        if guess in word_to_guess:
+            if all(letter in guessed_letters for letter in word_to_guess):
+                print(f"Congratulations, {username}! You guessed the word: {word_to_guess}")
+                break
+        else:
+            lives -= 1
+            print(f"Wrong guess! Lives left: {lives}")
+
+            if lives == 0:
+                print(f"Oops! You ran out of lives. The correct word was: {word_to_guess}. Better luck next time!")
+
+    end_game(username)
 
 
         
