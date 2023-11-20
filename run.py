@@ -27,9 +27,9 @@ def hangman():
 
 # username function - error if requirements not met. Print to console when met
 def welcome():
-    print("Welcome to Hangman!")
+    print("Welcome to Hangman! This is a gussing game where you have a limited number of lives. Do you think you have what it takes?")
     while True:
-        username = input("Enter your username (1-8 characters, no numbers or special characters):\n")
+        username = input("Enter your username below to get started! (1-8 characters, no numbers or special characters):\n")
 
         if 1 <= len(username) <= 8 and username.isalpha():
             break
