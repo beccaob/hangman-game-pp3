@@ -48,7 +48,7 @@ def display_menu():
     print("1. Start Game")
     print("2. Exit Game")
 
-#gets user choise of 1 or 2
+#gets user choice of 1 or 2
 def get_user_choice():
     choice = input("Enter your choice (1 or 2):\n")
     return choice
@@ -56,11 +56,11 @@ def get_user_choice():
 def start_game():
     objective = "The words used in this game are popular musical instruments. You have 10 lives. Good luck!"
     print(objective)
-
+#choose random word and sets guessed letters to 0 
     word_to_guess = choose_word().lower()
     guessed_letters = []
     lives = 10
-
+# loop runs if word is not guessed - breaks if lives gone or word guessed
     while lives > 0:
         display_word_with_lives(word_to_guess, guessed_letters, lives)
         guess = get_user_guess()
@@ -76,5 +76,13 @@ def start_game():
         else:
             lives -= 1
             print(f"Wrong guess! Lives left: {lives}")
+
+        if lives == 0:
+            print(f"Oops! You ran out of lives. The correct word was: {word_to_guess}. Better luck next time!")
+
+        end_game()
+    
+def display_word_with_lives(word,guessed_letters,lives):
+    print(f"Word: {display_word(word, guessed_letters)} | Lives: {lives}")
 
         
