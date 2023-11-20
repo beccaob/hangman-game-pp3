@@ -95,4 +95,12 @@ def get_user_guess():
 def display_word_with_lives(word, guessed_letters, lives):
     print(f"Word: {display_word(word, guessed_letters)} | Lives: {lives}")
 
+# end of game options
+def end_game(username):
+    print("Game Over")
+    print("Select an option:")
+    print("1. Restart")
+    print("2. Quit To Home")
+    choice = get_user_choice()
+
         
