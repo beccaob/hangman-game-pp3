@@ -3,7 +3,7 @@ import random
 
 # words to be used in game
 def choose_word():
-    words = {"guitar","piano","flute","violin","drums","bass","triangle"}
+    words = ["guitar","piano","flute","violin","drums","bass","triangle"]
     return random.choice(words)
 
 # iterate through each letter in the word
@@ -68,7 +68,7 @@ if __name__ == "__main__": #checks if being run directly or imported as a module
         else:
             print("Invalid choice. Please enter 1 or 2.")
 
-def start_game():
+def start_game(username):
     objective = "The words used in this game are popular musical instruments. You have 10 lives. Good luck!"
     print(objective)
 #choose random word and sets guessed letters to 0 
