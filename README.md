@@ -59,6 +59,9 @@ In the future, I would like to add the option of a hint for the user and also di
 I tested my code by using Synk. It can be found here - https://snyk.io/code-checker/python/ 
 I wanted to use PEP8 but it was redirecting me to another site which was not letting me test my code.
 ![run.py](assets/images/python-test.png)<br>
+
+I also used https://extendsclass.com/python-tester.html to test my syntax. No errors were dectected. 
+![syntax](assets/images/syntax.png)
 ### Manual Testing
 - Feature Testing
 
