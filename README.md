@@ -98,4 +98,16 @@ As far as I am aware, there are no unfixed bugs in this project.
 7. Synk for testing. 
 8. https://www.programiz.com/python-programming/online-compiler/ For testing code before entering to gitpod to ensure it worked. 
 
+## Deployment 
+1. Log into Heroku website or create a free account if you dont have one. 
+2. Click 'new' on the top right of the dashboard then click 'create new app'. 
+3. Choose a unique app name and the region you're in - when happy, click 'create app'. 
+4. In the next page, choose 'settings'. 
+5. Set two config vars - CREDS.json & PORT (key) 8000 (value). 
+6. Add two buildpacks, Python & nodejs - in this order only. 
+7. Navigate to the deploy tab and connect your github account. 
+8. At the bottom of the page, choose 'Manual Deploy'from the main branch. 
+9. Click 'Deploy Branch'. 
+
+This will take a minute or two and your project is deployed. You can choose to enable automatic depolys if you wish also. 
 
