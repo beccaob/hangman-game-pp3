@@ -88,4 +88,14 @@ I had an issue with the game running due to unorganised code. I fixed this by or
 I also has an issue with printing ‘Correct well done’ to the console. Each time a letter was guessed, it would print correct to the console even if the answer was incorrect. I took out this message so the game would function properly. 
 As far as I am aware, there are no unfixed bugs in this project. 
 
+## Technology 
+1. Github for storing and version control. 
+2. Gitpod for editing code. 
+3. Heroku for deployment. 
+4. Fireshot for screenshots. 
+5. Python Cheat Sheet - https://www.pythoncheatsheet.org/
+6. CI Course Material. 
+7. Synk for testing. 
+8. https://www.programiz.com/python-programming/online-compiler/ For testing code before entering to gitpod to ensure it worked. 
+
 
