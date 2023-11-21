@@ -13,6 +13,7 @@ def display_word(word, guessed_letters):
     for letter in word:
         if letter in guessed_letters:
             display += letter
+            print("Correct, well done!\n")
         else:
             display += " _ "
     return display
@@ -27,7 +28,7 @@ def hangman():
 
 # username function - error if requirements not met. Print to console when met
 def welcome():
-    print("Welcome to Hangman! This is a gussing game where you have a limited number of lives. Do you think you have what it takes?\n")
+    print("Welcome to Hangman! This is a gussing game where you have a limited number of\n lives. Do you think you have what it takes?\n")
     while True:
         username = input("Enter your username below to get started! (1-8 characters, no numbers or special characters):\n")
 
