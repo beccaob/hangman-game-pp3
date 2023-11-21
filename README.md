@@ -55,3 +55,32 @@ They are then given two options, restart or return home. Restart will restart th
 ## Features left to implement 
 In the future, I would like to add the option of a hint for the user and also different levels of difficulty. 
 
+## Testing 
+I tested my code by using Synk. It can be found here - https://snyk.io/code-checker/python/ 
+I wanted to use PEP8 but it was redirecting me to another site which was not letting me test my code.
+![run.py](assets/images/python-test)<br>
+### Manual Testing
+- Feature Testing
+
+Feature | Outcome | Pass/Fail  
+--- | --- | ---
+Username Too Long | Error message received.| Pass
+No Username Entered| Error message received | Pass
+Special Characters In Username | Error message received.| Pass
+Numbers In Username | Error message received. | Pass
+Username criteria met| No error message, game proceeds | Pass
+Exit game selected| game ends  | Pass
+Start game selected | game starts | Pass
+Correct letter guessed | letter replaces blank space | Pass
+Incorrect letter guessed | error message, -1 in lives, game resumes | Pass
+No letter guessed | Error message received | Pass
+Number or special character entered instead of letter | Error message received | Pass 
+Two or more letters guessed | Error message received | Pass 
+Game won | Congratulations message received and restart/quit options presented | Pass
+Game Lost | Sorry message received and restart/return options presented | Pass
+Restart game | Game restarts from beginning | Pass
+Return Home | Game returns to start screen | Pass 
+Quit Game | Game quits, script ends | Pass 
+Invalid input in restart, return or quit | Error message received, option presented again | Pass 
+
+
