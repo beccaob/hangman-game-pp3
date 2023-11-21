@@ -111,3 +111,14 @@ As far as I am aware, there are no unfixed bugs in this project.
 
 This will take a minute or two and your project is deployed. You can choose to enable automatic depolys if you wish also. 
 
+## Credits 
+1. Code Institute Course Material & Love Sandwiches walkthrough.
+2. Python Cheat Sheet - mentioned above. 
+3. https://www.programiz.com/python-programming/online-compiler/ 
+
+## Acknowledgments
+1. Slack community 
+2. Stryker programming team for their tips, tricks and support. 
+3.  My family for their support through a rough period in getting this project finished. 
+4. Myself for persevering.
+
