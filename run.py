@@ -14,6 +14,7 @@ def display_word(word, guessed_letters):
         if letter in guessed_letters:
             display += letter
             print("Correct, well done!\n")
+            continue
         else:
             display += " _ "
     return display
