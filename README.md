@@ -83,4 +83,9 @@ Return Home | Game returns to start screen | Pass
 Quit Game | Game quits, script ends | Pass 
 Invalid input in restart, return or quit | Error message received, option presented again | Pass 
 
+### Bugs
+I had an issue with the game running due to unorganised code. I fixed this by organising the code in the way the game was ran – this fixed the issue for me. 
+I also has an issue with printing ‘Correct well done’ to the console. Each time a letter was guessed, it would print correct to the console even if the answer was incorrect. I took out this message so the game would function properly. 
+As far as I am aware, there are no unfixed bugs in this project. 
+
 
