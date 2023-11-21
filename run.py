@@ -13,8 +13,6 @@ def display_word(word, guessed_letters):
     for letter in word:
         if letter in guessed_letters:
             display += letter
-            print("Correct, well done!\n")
-            continue
         else:
             display += " _ "
     return display
@@ -80,7 +78,7 @@ def start_game(username):
             print(f"Wrong guess! Lives left: {lives}\n")
 
             if lives == 0:
-                print(f"Oops! You ran out of lives./n The correct word was: {word_to_guess}.\nBetter luck next time!")
+                print(f"Oops! You ran out of lives.\n The correct word was: {word_to_guess}.\nBetter luck next time!")
 
     end_game(username)
 
